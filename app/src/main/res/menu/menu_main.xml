@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MainActivity">
+    <group android:menuCategory="container">
+        <item
+            android:id="@+id/action_settings"
+            android:menuCategory="container"
+            android:orderInCategory="100"
+            android:title="@string/preferences"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_forecast"
+            android:menuCategory="container"
+            android:orderInCategory="100"
+            android:title="@string/forecast"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_exit"
+            android:menuCategory="container"
+            android:orderInCategory="100"
+            android:title="@string/exit_app"
+            app:showAsAction="never" />
+    </group>
+
+</menu>

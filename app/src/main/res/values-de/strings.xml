@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DressToday</string>
+    <string name="checking_location">Lokalisierungsprüfung</string>
+    <string name="downloading">Herunterladen der Daten</string>
+    <string name="feels_like">Fühlt sich an wie</string>
+    <string name="female">Frau</string>
+    <string name="male">Mann</string>
+    <string name="for_city">für</string>
+    <string name="hours">Stunden</string>
+    <string name="inLoc">in</string>
+    <string name="inPref">in</string>
+    <string name="length_of_forecast">Länge der Wettervorhersage</string>
+    <string name="no_internet">Keine Internetverbindung</string>
+    <string name="start_forecast">Anfangen Wettervorhersage</string>
+    <string name="weather_now">Wetter jetzt</string>
+    <string name="x_hour_forecast">%1$d-St.-Prognose</string>
+    <string name="data_downloaded">Daten heruntergeladen</string>
+    <string name="new_preferences">Daten Heruntergeladen</string>
+    <string name="error_length">Bitte geben Sie korrekte Daten 1–24\nzB: 8 – 8 Stunden prognostiziert</string>
+    <string name="error_start"> Bitte geben Sie korrekte Daten 0–10\n0 - beginnen Wettervorhersage ab jetzt\n10 - beginnen in 10 Stunden prognostiziert</string>
+    <string name="language">de</string>
+    <string name="forecast">Wettervorhersage</string>
+    <string name="preferences">Voreinstellungen</string>
+    <string name="exit_app">Beenden</string>
+    <string name="noservice_text">API Services sind getrennt\n\nVersuchen Sie es später</string>
+</resources>

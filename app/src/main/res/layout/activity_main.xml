@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="">
+
+    <ImageView
+        android:id="@+id/bgweather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:alpha="0.35"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bgweather" />
+
+    <ImageView
+        android:id="@+id/whattowearbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bgweather"
+        android:alpha="0.35"
+        android:scaleType="fitXY"
+        android:src="@drawable/whattowearbg" />
+
+    <ImageView
+        android:id="@+id/main_ice_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.7"
+        android:background="@drawable/ice"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/main_rain_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rainy"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/main_snow_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/snow"
+        android:alpha="0.8"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.3"
+        android:background="#15151e" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bgweather"
+        android:background="@color/colorAccent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/main_image"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/whattowearbg"
+        android:layout_below="@+id/main_image"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/main_humidity_image"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/main_cloudiness_image"
+        android:layout_alignLeft="@+id/main_temperature_image"
+        android:layout_alignStart="@+id/main_temperature_image"
+        android:alpha="0.8"
+        android:background="@drawable/humidity" />
+
+    <ImageView
+        android:id="@+id/main_windspeed_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_description"
+        android:layout_alignEnd="@+id/main_cloudiness_image"
+        android:layout_alignLeft="@+id/main_cloudiness_image"
+        android:layout_alignRight="@+id/main_cloudiness_image"
+        android:layout_alignStart="@+id/main_cloudiness_image"
+        android:layout_alignTop="@+id/textView05"
+        android:alpha="0.80"
+        android:background="@drawable/wind" />
+
+    <ImageView
+        android:id="@+id/main_temperature_image"
+        android:layout_width="35dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/main_image"
+        android:layout_toEndOf="@+id/textView03"
+        android:layout_toRightOf="@+id/textView03"
+        android:alpha="0.80"
+        android:background="@drawable/temperature" />
+
+    <ImageView
+        android:id="@+id/main_cloudiness_image"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView09"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:alpha="0.80"
+        android:background="@drawable/cloudiness" />
+
+    <TextView
+        android:id="@+id/download_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:text="@string/downloading"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/feedback_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/main_preferences"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/main_windspeed_image"
+        android:layout_alignRight="@+id/main_windspeed_image"
+        android:layout_alignTop="@+id/textView01"
+        android:alpha="0.8"
+        android:background="@drawable/preferences" />
+
+    <Button
+        android:id="@+id/checkweatherbutton"
+        android:layout_width="112dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:alpha="0.8"
+        android:background="@drawable/checkweatherbutton"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/download_data"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="95dp"
+        android:layout_toEndOf="@+id/download_data"
+        android:layout_toRightOf="@+id/download_data"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/main_preferences"
+        android:layout_alignRight="@+id/main_preferences"
+        android:layout_alignTop="@+id/textView03"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/main_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView03"
+        android:layout_toEndOf="@+id/main_temperature_image"
+        android:layout_toRightOf="@+id/main_temperature_image"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/main_windspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView07"
+        android:layout_alignEnd="@+id/main_windspeed_image"
+        android:layout_alignRight="@+id/main_windspeed_image"
+        android:layout_marginRight="7dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/download_data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/weather_now"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView01"
+        android:layout_centerHorizontal="true"
+        android:text="@string/inLoc"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/main_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView02"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_temperature"
+        android:layout_marginTop="36dp"
+        android:layout_toLeftOf="@+id/textView01"
+        android:layout_toStartOf="@+id/textView01"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/main_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView07"
+        android:layout_toEndOf="@+id/main_humidity_image"
+        android:layout_toRightOf="@+id/main_humidity_image"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_cloudiness"
+        android:layout_alignEnd="@+id/textView05"
+        android:layout_alignRight="@+id/textView05"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/main_cloudiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_windspeed"
+        android:layout_alignStart="@+id/main_windspeed"
+        android:layout_below="@+id/textView07"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/main_cloudiness_image"
+        android:layout_below="@+id/main_city"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/ow09d" />
+
+    <TextView
+        android:id="@+id/main_description"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/main_image"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#000" />
+
+</RelativeLayout>

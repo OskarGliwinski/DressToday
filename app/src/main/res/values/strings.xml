@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name" translatable="false">DressToday</string>
+    <string name="language">en</string>
+    <string name="preferences">Preferences</string>
+    <string name="forecast">Forecast</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="downloading">Downloading Data</string>
+    <string name="checking_location">Checking Location</string>
+    <string name="exit_app">Exit</string>
+
+
+    <string name="data_downloaded">Data Downloaded</string>
+    <string name="new_preferences">New Preferences Set</string>
+
+    <string name="weather_now">Weather Now</string>
+    <string name="inLoc">in</string>
+    <string name="inPref">in</string>
+    <string name="for_city">for</string>
+    <string name="feels_like">Feels Like</string>
+
+    <string name="x_hour_forecast">%1$d hour Forecast</string>
+
+    <string name="temperature" translatable="false">%1$d°C</string>
+    <string name="windspeed" translatable="false">%1$d km/h</string>
+    <string name="humidity" translatable="false">%d%%</string>
+    <string name="cloudiness" translatable="false">%d%%</string>
+
+    <string name="length_of_forecast">Length of Forecast</string>
+    <string name="hours">Hours</string>
+    <string name="start_forecast">Start Forecast</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="error_length">Please insert correct data, 1–24\ne.g. 8 - forecast for 8 hours</string>
+    <string name="error_start">Please insert correct data, 0–10\n0 - start forecast from now\n10 - start forecast in 10 hours</string>
+    <string name="noservice_text">Weather API services are offline\n\nTry again later</string>
+
+</resources>
